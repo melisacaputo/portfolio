@@ -47,7 +47,7 @@ body::-webkit-scrollbar-thumb {
 /* base styles */
 body {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.4;
   color: var(--color-black);
@@ -65,7 +65,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4.2rem;
+  font-size: 4rem;
 }
 
 ul {
@@ -111,7 +111,6 @@ img {
   position: relative;
   font-size: 1.2em;
   align-self: center;
-
 }
 
 .nav-list a:after {
@@ -152,7 +151,7 @@ a:hover::after {
 
 .ws-subtitle2 {
   font-style: italic;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 300;
   margin-top: 20px;
   margin-bottom: 50px;
@@ -182,15 +181,15 @@ a:hover::after {
 }
 
 /* about me section */
-.am-section {
-  font-size: 1.8rem;
+.aboutme-section {
+  font-size: 1.6rem;
   width: 90%;
   margin: auto;
   text-align: left;
 }
 
-.am-section>p {
-  margin-top: 20px;
+.aboutme-section>p {
+  margin-top: 18px;
 }
 
 
@@ -291,9 +290,13 @@ footer {
   }
 }
 
-@media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 426px) and (max-device-width: 768px) {
   html {
-    font-size: 45%;
+    font-size:50%;
+  }
+
+  section {
+    scroll-margin-top: 40px;
   }
 
   .nav {
@@ -305,9 +308,12 @@ footer {
   }
 }
 
-@media only screen and (min-device-width: 376px) and (max-device-width: 424px) {
+@media only screen and (min-device-width: 376px) and (max-device-width: 425px) {
   html {
-    font-size: 40%;
+    font-size: 45%;
+  }
+  section {
+    scroll-margin-top: 30px;
   }
 
   .nav {
@@ -318,19 +324,33 @@ footer {
     margin: 0 1rem;
   }
 
+  .nav-list li {
+    padding: 0px;
+  }
+  .nav-list a:after{
+    background: none;
+  }
 }
 
 @media only screen and (min-device-width: 344px) and (max-device-width: 375px) {
   html {
-    font-size: 35%;
+    font-size: 40%;
   }
 
+  section {
+    scroll-margin-top: 30px;
+  }
   .nav {
     justify-content: center;
   }
 
   .nav-list>li {
     margin: 0px;
+    padding: 0px;
+  }
+
+  .nav-list a:after{
+    background: none;
   }
 
   .contact-links {
@@ -345,15 +365,21 @@ footer {
   html {
     font-size: 35%;
   }
-
+  section {
+    scroll-margin-top: 30px;
+  }
   .nav {
     justify-content: center;
   }
 
   .nav-list>li {
     margin: 0px;
-    padding: 0px 5px;
+    padding: 0px;
     height: 10px;
+  }
+
+  .nav-list a:after{
+    background: none;
   }
 
   .contact-links {
