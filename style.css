@@ -1,4 +1,4 @@
-/* paleta de colores */
+/*COLORES*/
 :root {
   --color-black: #212529;
   --color-grey-1: #343A40;
@@ -9,20 +9,20 @@
   --color-aqua: #06D6A0;
 }
 
-/* reset */
+/*RESET*/
 * {
   margin: 0;
   padding: 0;
 }
 
-/* box-sizing & font sizing */
+/*BOX-SIZING & FONT SIZING*/
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
 
-/*scroll behavior*/
+/*SCROLL BEHAVIOR*/
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -33,7 +33,7 @@ section {
   scroll-margin-top: 70px;
 }
 
-/*scrollbar*/
+/*SCROLLBAR*/
 body::-webkit-scrollbar {
   width: 10px;
   background-color: var(--color-grey-1);
@@ -44,7 +44,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px;
 }
 
-/* base styles */
+/*GENERAL*/
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
@@ -81,7 +81,7 @@ img {
   width: 100%;
 }
 
-/* header */
+/*HEADER*/
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -131,7 +131,7 @@ a:hover::after {
   opacity: 1;
 }
 
-/* welcome section */
+/*WELCOME SECTION*/
 .welcome-section {
   display: flex;
   flex-direction: column;
@@ -180,7 +180,7 @@ a:hover::after {
   border-bottom: 0.2rem solid var(--color-grey-3);
 }
 
-/* about me section */
+/*ABOUT ME SECTION */
 .aboutme-section {
   font-size: 1.6rem;
   width: 90%;
@@ -193,7 +193,7 @@ a:hover::after {
 }
 
 
-/*projects section */
+/*PROJECTS SECTION*/
 @media (max-width: 28.75em) {
   .projects-section-header {
     font-size: 4rem;
@@ -247,7 +247,7 @@ a:hover::after {
   padding: 2rem 0.5rem;
 }
 
-/* footer */
+/*FOOTER*/
 footer {
   font-weight: 500;
   display: flex;
@@ -279,7 +279,7 @@ footer {
 }
 
 
-/*meadia queries*/
+/*MEDIA QUERIES*/
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
   html {
     font-size: 110%;
