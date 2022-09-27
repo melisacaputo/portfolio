@@ -1,12 +1,9 @@
 /*COLORES*/
 :root {
-  --color-black: #212529;
-  --color-grey-1: #343A40;
-  --color-grey-2: #495057;
-  --color-grey-3: #ADB5BD;
-  --color-grey-4: #DEE2E6;
-  --color-white: #F8F9FA;
-  --color-aqua: #06D6A0;
+  --color-black: #000000;
+  --color-grey: #303030;
+  --color-white: #f8f9fa;
+  --color-lila: #b110eb;
 }
 
 /*RESET*/
@@ -34,19 +31,29 @@ section {
 }
 
 /*SCROLLBAR*/
-body::-webkit-scrollbar {
-  width: 10px;
-  background-color: var(--color-grey-1);
+
+/*firefox*/
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-lila) var(--color-grey);
 }
 
-body::-webkit-scrollbar-thumb {
-  background-color: var(--color-aqua);
-  border-radius: 5px;
+/*other browser*/
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--color-grey);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-lila);
 }
 
 /*GENERAL*/
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.4;
@@ -55,7 +62,7 @@ body {
 
 h1,
 h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   text-align: center;
 }
@@ -90,8 +97,7 @@ img {
   left: 0;
   width: 100%;
   height: 10%;
-  background: var(--color-grey-1);
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+  background: var(--color-grey);
   z-index: 10;
 }
 
@@ -100,7 +106,7 @@ img {
 }
 
 .nav-list a {
-  color: var(--color-grey-4);
+  color: var(--color-white);
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -122,7 +128,7 @@ img {
   bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--color-aqua);
+  background: var(--color-lila);
   transition: width 0.4s;
 }
 
@@ -140,13 +146,13 @@ a:hover::after {
   width: 100%;
   height: 100vh;
   color: var(--color-white);
-  background-color: var(--color-grey-2);
+  background-color: #333333f5;
 }
 
 .ws-subtitle1 {
   font-size: 3rem;
   font-weight: 200;
-  color: var(--color-negro);
+  color: var(--color-white);
 }
 
 .ws-subtitle2 {
@@ -160,10 +166,10 @@ a:hover::after {
   text-align: center;
 }
 
-.ws-subtitle2>span {
+.ws-subtitle2 > span {
   margin-left: 20px;
   margin-right: 20px;
-  color: var(--color-aqua);
+  color: var(--color-lila);
   font-weight: 1000;
 }
 
@@ -171,13 +177,12 @@ a:hover::after {
 .section-style {
   text-align: center;
   padding: 5rem 2rem 5rem;
-  background: var(--main-blue);
 }
 
 .section-header {
   max-width: 640px;
   margin: 0 auto 5rem auto;
-  border-bottom: 0.2rem solid var(--color-grey-3);
+  border-bottom: 0.2rem solid var(--color-grey);
 }
 
 /*ABOUT ME SECTION */
@@ -188,10 +193,11 @@ a:hover::after {
   text-align: left;
 }
 
-.aboutme-section>p {
-  margin-top: 18px;
+.aboutme-section > p {
+  line-height: 35px;
+  width: 90%;
+  margin: 20px auto 0px auto;
 }
-
 
 /*PROJECTS SECTION*/
 @media (max-width: 28.75em) {
@@ -227,12 +233,12 @@ a:hover::after {
 }
 
 .code {
-  color: var(--main-gray);
+  color: var(--color-black);
   transition: color 0.3s ease-out;
 }
 
 .project:hover .code {
-  color: var(--color-aqua);
+  color: var(--color-lila);
 }
 
 .project-image {
@@ -242,7 +248,7 @@ a:hover::after {
 }
 
 .project-title {
-  color: var(--color-grey-1);
+  color: var(--color-black);
   font-size: 1.8rem;
   padding: 2rem 0.5rem;
 }
@@ -263,21 +269,20 @@ footer {
   width: 100%;
   margin-top: 4rem;
   margin-bottom: 4rem;
-  color: var(--color-grey-1);
+  color: var(--color-grey);
 }
 
 .contact-details {
   font-size: 4.5rem;
   margin-left: 20px;
   margin-right: 20px;
-  color: var(--color-grey-1);
+  color: var(--color-grey);
 }
 
 .contact-details:hover {
   transform: translateY(2px);
-  color: var(--color-aqua);
+  color: var(--color-lila);
 }
-
 
 /*MEDIA QUERIES*/
 @media only screen and (min-device-width: 1441px) and (max-device-width: 2560px) {
@@ -347,7 +352,7 @@ footer {
     justify-content: center;
   }
 
-  .nav-list>li {
+  .nav-list > li {
     margin: 0px;
     padding: 0px;
   }
@@ -361,7 +366,6 @@ footer {
     margin: auto;
     padding-bottom: 30px;
   }
-
 }
 
 @media only screen and (min-device-width: 200px) and (max-device-width: 343px) {
@@ -377,7 +381,7 @@ footer {
     justify-content: center;
   }
 
-  .nav-list>li {
+  .nav-list > li {
     margin: 0px;
     padding: 0px;
     height: 10px;
@@ -392,5 +396,4 @@ footer {
     margin: auto;
     padding-bottom: 30px;
   }
-
 }
