@@ -337,6 +337,10 @@ footer {
   .nav-list a:after {
     background: none;
   }
+
+  .aboutme-section > p {
+    line-height: 18px;
+  }
 }
 
 @media only screen and (min-device-width: 344px) and (max-device-width: 375px) {
@@ -365,6 +369,10 @@ footer {
     width: 60%;
     margin: auto;
     padding-bottom: 30px;
+  }
+
+  .aboutme-section > p {
+    line-height: 18px;
   }
 }
 
@@ -395,5 +403,9 @@ footer {
     width: 80%;
     margin: auto;
     padding-bottom: 30px;
+  }
+
+  .aboutme-section > p {
+    line-height: 18px;
   }
 }
